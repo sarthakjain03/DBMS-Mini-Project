@@ -47,10 +47,14 @@ body {
 .client {
     width: 190.3px;
     margin: 0px 30px;
-    padding: 43px 30px 24.4px;
+    padding: 29px 30px 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center
+}
+
+.client h2 {
+    margin-bottom: 20px;
 }
 
 .owner {
@@ -80,6 +84,7 @@ body {
 
 .client button {
     width: 150px;
+    margin: 10px auto;
 }
 
 .owner button {
