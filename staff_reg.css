@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+
+form {
+    width: 50%;
+}
+
+table {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px ;
+    padding: 15px 20px 0px;
+    border: 1px solid black;
+}
+
+.table1 {
+    margin-left: 200px;
+}
+
+.table2 {
+    margin-right: 200px;
+}
+
+tbody {
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 150px;
+}
+
+.dateinput {
+    padding: 1px 2px;
+}
+
+select {
+    width: 158px;
+}
