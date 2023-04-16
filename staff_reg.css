@@ -10,7 +10,7 @@ div {
 }
 
 form {
-    width: 60%;
+    width: 65%;
 }
 
 table {
@@ -26,13 +26,21 @@ table {
     border: 0;
 }
 
+.innertable td {
+    margin: 0 10px;
+}
+
+.innertable tr {
+    justify-content: space-between;
+}
+
 tbody {
     width: 100%;
 }
 
 tr {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 15px;
 }
 
