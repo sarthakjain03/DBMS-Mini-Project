@@ -10,23 +10,20 @@ div {
 }
 
 form {
-    width: 50%;
+    width: 60%;
 }
 
 table {
     display: flex;
     justify-content: space-around;
-    margin: 20px ;
+    margin: 0px 20px;
     padding: 15px 20px 0px;
     border: 1px solid black;
 }
 
-.table1 {
-    margin-left: 200px;
-}
-
-.table2 {
-    margin-right: 200px;
+.innertable {
+    margin: 0;
+    border: 0;
 }
 
 tbody {
@@ -49,4 +46,24 @@ input {
 
 select {
     width: 158px;
+}
+
+.btn_div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-left: 19px;
+    padding: 10px 20px;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+    background-color: darkblue;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: darkblue;
+    background-color: white;
 }
