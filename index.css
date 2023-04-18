@@ -5,19 +5,34 @@ h1 {
 div {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     margin-top: 30px;
 }
 
-form {
+.leaseForm form, .ownerReg form {
+    width: 35%;
+}
+
+.ownerReg tr {
+    justify-content: space-between;
+}
+
+.propReg form {
     width: 60%;
+}
+
+.clientReg form, .staffReg form {
+    width: 65%;
+}
+
+.clientReg table, .propReg table, .staffReg table {
+    padding: 15px 20px 0;
 }
 
 table {
     display: flex;
     justify-content: space-around;
     margin: 0px 20px;
-    padding: 15px 20px 0px;
+    padding: 25px 30px 10px; /* different */
     border: 1px solid black;
 }
 
@@ -27,8 +42,24 @@ tbody {
 
 tr {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: center; /* different */
+    margin-bottom: 15px;
+}
+
+.leaseForm tr {
+    justify-content: space-between;
+}
+
+input {
+    width: 150px;
+}
+
+.branchtable td {
+    margin: 0 10px;
+}
+
+.branchtable tr {
+    justify-content: space-between;
 }
 
 .innertable {
@@ -44,8 +75,12 @@ tr {
     justify-content: space-between;
 }
 
-input {
-    width: 150px;
+.dateinput {
+    padding: 1px 2px;
+}
+
+select {
+    width: 158px;
 }
 
 .btn_div {
