@@ -1,8 +1,8 @@
 body {
-    /* font-family: Arial, sans-serif; */
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 
 .heading {
@@ -33,6 +33,7 @@ body {
     margin-top: 0;
     font-size: 32px;
     margin-bottom: 10px;
+    
 }
 
 .staff {
@@ -41,6 +42,7 @@ body {
     padding: 73px 30px 53px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     text-align: center
 }
 
@@ -50,6 +52,7 @@ body {
     padding: 29px 30px 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     text-align: center
 }
 
@@ -62,6 +65,7 @@ body {
     padding: 73px 30px 53px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     text-align: center
 }
 
