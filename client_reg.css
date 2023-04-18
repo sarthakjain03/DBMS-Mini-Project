@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+
+form {
+    width: 65%;
+}
+
+table {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px;
+    padding: 15px 20px 0px;
+    border: 1px solid black;
+}
+
+.branchtable td {
+    margin: 0 10px;
+}
+
+.branchtable tr {
+    justify-content: space-between;
+}
+
+.innertable {
+    margin: 0;
+    border: 0;
+}
+
+.innertable td {
+    margin: 0 10px;
+}
+
+.innertable tr {
+    justify-content: space-between;
+}
+
+tbody {
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 150px;
+}
+
+.dateinput {
+    padding: 1px 2px;
+}
+
+select {
+    width: 158px;
+}
+
+.btn_div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-left: 19px;
+    padding: 10px 20px;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+    background-color: darkblue;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: darkblue;
+    background-color: white;
+}

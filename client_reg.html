@@ -5,8 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Client Registration</title>
+    <link rel="stylesheet" href="client_reg.css">
 </head>
 <body>
-    
+    <h1>Client Registration Form</h1>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <table style="margin: 0px; border: 0;">
+                            <tr>
+                                <td>
+                                    <table class="innertable">
+                                        <tr>
+                                            <td><label for="clientnum">Client Number: </label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="clientname">Full Name: </label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                    </table>
+                                    <table class="innertable">
+                                        <tr><td><strong>Enter property requirements</strong></td></tr>
+                                        <tr>
+                                            <td><label for="type">Type: </label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="maxrent">Max Rent: </label></td>
+                                            <td><input type="number" name="" id=""></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="branchtable" style="border: 0;">
+                            <tr><td><strong>Branch Details</strong></td></tr>
+                            <tr>
+                                <td><label for="branchnum">Branch Number: </label></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="branchadd">Branch Address: </label></td>
+                                <td><input type="text"></td>
+                                <!-- this will be autofill based on branch number -->
+                            </tr>
+                            <tr>
+                                <td><label for="registrar">Registered By: </label></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="regdate">Date Registered: </label></td>
+                                <td><input type="date" name="" id=""></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="btn">
+        <button>REGISTER</button>
+    </div>
 </body>
 </html>
