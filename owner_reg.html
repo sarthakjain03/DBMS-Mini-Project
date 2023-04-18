@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Owner Registration</title>
+    <link rel="stylesheet" href="owner_reg.css">
 </head>
 <body>
-    
+    <h1>Owner Registration</h1>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="ownerNum">Owner Number: </label></td>
+                    <td><input type="text"></td>
+                    <!-- this is autofill -->
+                </tr>
+                <tr>
+                    <td><label for="ownerName">Full Name: </label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="otype">Type: </label></td>
+                    <td><select name="otype" id="">
+                        <option value="Select">Select</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Business">Business</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="oadd">Address: </label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="otele">Telephone: </label></td>
+                    <td><input type="number" name="otele" id=""></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="btn_div">
+        <button>REGISTER</button>
+    </div>
 </body>
 </html>

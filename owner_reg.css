@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+
+form {
+    width: 35%;
+}
+
+table {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px;
+    padding: 25px 30px 10px;
+    border: 1px solid black;
+}
+
+tbody {
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 150px;
+}
+
+select {
+    width: 158px;
+}
+
+.btn_div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-left: 19px;
+    padding: 10px 20px;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+    background-color: darkblue;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: darkblue;
+    background-color: white;
+}
