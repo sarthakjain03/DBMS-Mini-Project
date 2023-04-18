@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Lease Form</title>
+    <link rel="stylesheet" href="lease_form.css">
 </head>
 <body>
-    
+    <h1>Lease Form</h1>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="lnum">Lease Number: </label></td>
+                    <td><input type="text"></td>
+                    <!-- this is autofill  -->
+                </tr>
+                <tr>
+                    <td><label for="cnum">Client Number: </label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="pnum">Property Number: </label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="paymentmethod">Payment Method: </label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="deposit">Deposit Paid: </label></td>
+                    <td><select name="deposit" id="">
+                        <option value="Select">Select</option>
+                        <option value="Y">Yes</option>
+                        <option value="N">No</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="rentStart">Rent Start: </label></td>
+                    <td><input type="date" name="rentStart" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="rentFinish">Rent Finish: </label></td>
+                    <td><input type="date" name="rentFinish" id=""></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="btn_div">
+        <button>REGISTER</button>
+    </div>
 </body>
 </html>
