@@ -19,3 +19,6 @@ function propRegPage() {
 function leaseFormPg() {
     window.location.href = "lease_form.html"
 }
+function ownerRegPg() {
+    window.location.href = "owner_reg.html"
+}
