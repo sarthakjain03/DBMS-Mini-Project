@@ -5,9 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Property Listings</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./Style/index.css">
 </head>
 <body>
-    
+    <h1>Property Listing</h1>
+    <div class="staffListing">
+        <form action="">
+            <table class="innertable" style="margin: 0px; border: 2px solid #000;">
+                <tr>
+                    <td><label for="branchnum">Branch Address: </label></td>
+                    <td><input type="text" id="BranchAddress"></td>
+                </tr>
+                <tr>
+                    <td><label for="telenum">Telephone Number(s): </label></td>
+                    <td><input type="number" id="TeleNo"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="btn">
+        <button onclick="generateTable()">Search</button>
+    </div>
+
+    <div id="table-container" class="propListing-query"></div>
+    <script src="./Javascript/prop_list.js"></script>
 </body>
 </html>

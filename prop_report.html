@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Property Report</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./Style/index.css">
 </head>
 <body>
-    
+    <h1>Property Viewing Report</h1>
+    <div class="staffListing">
+        <form action="">
+            <table class="innertable" style="margin: 0px; border: 2px solid #000;">
+                <tr>
+                    <td><label for="branchnum">Property Number: </label></td>
+                    <td><input type="text" id="PropertyNumber"></td>
+                </tr>
+                <tr>
+                    <td><label for="telenum">Property Address: </label></td>
+                    <td><input type="text" id="PropertyAddress"></td>
+                </tr>
+                <tr>
+                    <td><label for="telenum">Type: </label></td>
+                    <td><input type="type" id="Type"></td>
+                </tr>
+                <tr>
+                    <td><label for="telenum">Rent: </label></td>
+                    <td><input type="text" id="Rent"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="btn">
+        <button onclick="generateTable()">Search</button>
+    </div>
+
+    <div id="table-container" class="staffListing-query"></div>
+    <script src="./Javascript/prop_report.js"></script>
 </body>
 </html>
