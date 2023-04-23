@@ -10,18 +10,18 @@
 <body>
     <h1>Staff Registration Form</h1>
     <div class="staffReg">
-        <form action="">
+        <form action="/staff_reg" method="post">
             <table>
                 <tr>
                     <td>
                         <table class="innertable">
                             <tr>
                                 <td><label for="staffnum">Staff Number: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text"  name="staffnum"></td>
                             </tr>
                             <tr>
                                 <td><label for="staffname">Full Name: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="staffname"></td>
                             </tr>
                             <tr>
                                 <td><label for="staffsex">Sex: </label></td>
@@ -33,7 +33,7 @@
                             </tr>
                             <tr>
                                 <td><label for="dob">Date of Birth: </label></td>
-                                <td><input type="date" class="dateinput"></td>
+                                <td><input type="date" name="dob" class="dateinput"></td>
                             </tr>
                             <tr>
                                 <td><label for="position">Position: </label></td>
@@ -44,24 +44,24 @@
                                     <option value="manager">Manager</option>
                                 </select></td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td><label for="salary">Salary: </label></td>
-                                <!-- this input field should be auto filled based on the position -->
-                                <td><input type="number"></td>
-                            </tr>
+                                
+                                <td><input type="number" name="salary"></td>
+                            </tr> -->
                             <tr>
                                 <td><label for="branchnum">Branch Number: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="branchnum"></td>
                             </tr>
                             <!-- below 2 input fields should be auto filled based on branch number -->
-                            <tr>
+                            <!-- <tr>
                                 <td><label for="branchadd">Branch Address: </label></td>
-                                <td><input type="text"></td>
-                            </tr>
-                            <tr>
+                                <td><input type="text" name="branchadd"></td>
+                            </tr> -->
+                            <!-- <tr>
                                 <td><label for="branchtele">Telephone Number: </label></td>
-                                <td><input type="number"></td>
-                            </tr>
+                                <td><input type="number" name="tele"></td>
+                            </tr> -->
                         </table>
                     </td>
                     <td>
@@ -69,25 +69,25 @@
                             <tr><td><strong>Enter details where applicable</strong></td></tr>
                             <tr>
                                 <td><label for="startdate">Start Date: </label></td>
-                                <td><input type="date" name="startdate" id="startdate" class="dateinput"></td>
+                                <td><input type="date" name="startdate" id="startdate" name="startdate" class="dateinput"></td>
                             </tr>
                             <tr>
                                 <td><label for="bonus">Bonus: </label></td>
                                 <td><input type="number" name="bonus" id="bonus"></td>
                             </tr>
                             <tr>
-                                <td><label for="supername">Supervisor Name: </label></td>
-                                <td><input type="text"></td>
+                                <td><label for="supername">Supervisor ID: </label></td>
+                                <td><input type="text" name="supernum"></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
             </table>
+            <div class="btn_div">
+                <!-- on clicking register, data should be added to database -->
+                <button>REGISTER</button>
+            </div>
         </form>
-    </div>
-    <div class="btn_div">
-        <!-- on clicking register, data should be added to database -->
-        <button>REGISTER</button>
     </div>
 </body>
 </html>
