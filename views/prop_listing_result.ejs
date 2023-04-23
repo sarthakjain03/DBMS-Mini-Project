@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH Owner Registration</title>
+    <link rel="stylesheet" href="./Style/index.css">
+</head>
+<body>
+    <div class="staffListing-Result" >
+        <table style="border: 1.5px solid" >
+            <tr>
+                <td>
+                <label><strong>Property No.</strong></label>
+                </td>
+                <td>
+                    <label><strong> Property Type </strong></label>
+                </td>
+                <td>
+                    <label><strong>Rooms(≥)</strong></label>
+                </td>
+                <td>
+                    <label><strong> Rent(≤) </strong></label>
+                </td>
+                <td>
+                    <label><strong> Property Address </strong></label>
+                </td>
+                <td>
+                    <label><strong> Managing Staff Number </strong></label>
+                </td>
+                <td>
+                    <label><strong> Owner Number </strong></label>
+                </td>
+                <td>
+                    <label> <strong> Branch Number</strong></label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="staffListing-Result" style="margin-top: 0px; ">
+        <table>
+            <% for(var i =0; i<prop_results.length;i++){ %>
+            <tr style="border: 1px solid;">
+                <td>
+                    <p><%= prop_results[i].property_no %></p>
+                </td>
+                <td>
+                    <p><%= prop_results[i].property_type %></p>
+                </td>
+                <td>
+                    <p><%= prop_results[i].rooms %></p>
+                </td>
+                <td>
+                    <p><%= prop_results[i].rent %></p>
+                </td>
+                <td>
+                    <p><%= prop_results[i].property_address %></p>
+                </td>
+                <td>
+                    <p><%= prop_results[i].managing_staff_no %></p>
+                </td>
+                <td>
+                    <p><%= prop_results[i].owner_no %></p>
+                </td>
+                <td>
+                    <p><%= prop_results[i].branch_no %></p>
+                </td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

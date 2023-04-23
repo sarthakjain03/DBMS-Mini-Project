@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH Owner Registration</title>
+    <link rel="stylesheet" href="./Style/index.css">
+</head>
+<body>
+    <div class="staffListing-Result" >
+        <table style="border: 1.5px solid" >
+            <tr>
+                <td>
+                <label><strong>Staff No.</strong></label>
+                </td>
+                <td>
+                    <label><strong> Full Name </strong></label>
+                </td>
+                <td>
+                    <label><strong>Sex</strong></label>
+                </td>
+                <td>
+                    <label><strong> Date of Birth </strong></label>
+                </td>
+                <td>
+                    <label><strong> Branch Number </strong></label>
+                </td>
+                <td>
+                    <label><strong> Super Staff Number </strong></label>
+                </td>
+                <td>
+                    <label><strong> Work Position </strong></label>
+                </td>
+                <td>
+                    <label> <strong> Start Date</strong></label>
+                </td>
+                <td>
+                    <label><strong>Bonuses</strong></label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="staffListing-Result" style="margin-top: 0px; ">
+        <table>
+            <% for(var i =0; i<staff_results.length;i++){ %>
+            <tr style="border: 1px solid;">
+                <td>
+                    <p><%= staff_results[i].staff_no %></p>
+                </td>
+                <td>
+                    <p><%= staff_results[i].full_name %></p>
+                </td>
+                <td>
+                    <p><%= staff_results[i].sex %></p>
+                </td>
+                <td>
+                    <p><%= staff_results[i].dob %></p>
+                </td>
+                <td>
+                    <p><%= staff_results[i].branch_no %></p>
+                </td>
+                <td>
+                    <p><%= staff_results[i].super_staff_no %></p>
+                </td>
+                <td>
+                    <p><%= staff_results[i].work_position %></p>
+                </td>
+                <td>
+                    <p><%= staff_results[i].start_date %></p>
+                </td>
+                <td>
+                    <p><%= staff_results[i].bonus %></p>
+                </td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

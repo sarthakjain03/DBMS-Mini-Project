@@ -104,7 +104,11 @@ button:hover {
 }
 
 /********************************** Staff-Listing ****************************/
-
+.staff-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .staffListing-query table,.propListing-query table{
     display: flex;
     flex-direction: column;
@@ -117,4 +121,21 @@ button:hover {
     justify-content: space-around;
     border-bottom: 2px solid grey;
     height: 2rem;
+}
+/* staffListing-Result ejs */
+.staffListing-Result table{
+    margin: 0px;
+    padding: 0px;
+}
+.staffListing-Result table tr{
+    margin-bottom: 0px;
+}
+
+.staffListing-Result table tr td{
+    padding: 18px 10px;
+    border-right: 1px solid;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
