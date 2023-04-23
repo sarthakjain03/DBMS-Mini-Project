@@ -10,31 +10,31 @@
 <body>
     <h1>Property Registration</h1>
     <div class="propReg">
-        <form action="">
+        <form action="/prop_reg" method="post">
             <table>
                 <tr>
                     <td>
                         <table class="innertable">
                             <tr>
                                 <td><label for="pnum">Property Number: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="propnum"></td>
                                 <!-- this should be autofill -->
                             </tr>
                             <tr>
                                 <td><label for="ptype">Type: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="type"></td>
                             </tr>
                             <tr>
                                 <td><label for="rooms">Rooms: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="room"></td>
                             </tr>
                             <tr>
                                 <td><label for="rent">Rent: </label></td>
-                                <td><input type="number" name="" id=""></td>
+                                <td><input type="number" name="rent" id=""></td>
                             </tr>
                             <tr>
                                 <td><label for="p_add">Address: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="address"></td>
                             </tr>
                         </table>
                     </td>
@@ -42,24 +42,24 @@
                         <table class="innertable">
                             <tr>
                                 <td><label for="mstaff">Managing Staff: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="managestaff"></td>
                             </tr>
                             <tr>
                                 <td><label for="ownerNum">Owner Number: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="ownernum"></td>
                             </tr>
                             <tr>
                                 <td><label for="branchnum">Branch Number: </label></td>
-                                <td><input type="text"></td>
+                                <td><input type="text" name="branchnum"></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
             </table>
+            <div class="btn_div">
+                <button>REGISTER</button>
+            </div>
         </form>
-    </div>
-    <div class="btn_div">
-        <button>REGISTER</button>
     </div>
 </body>
 </html>

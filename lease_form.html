@@ -10,24 +10,24 @@
 <body>
     <h1>Lease Form</h1>
     <div class="leaseForm">
-        <form action="">
+        <form action="/lease_form" method="post">
             <table>
                 <tr>
                     <td><label for="lnum">Lease Number: </label></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="lnum"></td>
                     <!-- this is autofill  -->
                 </tr>
                 <tr>
                     <td><label for="cnum">Client Number: </label></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="cnum"></td>
                 </tr>
                 <tr>
                     <td><label for="pnum">Property Number: </label></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="pnum"></td>
                 </tr>
                 <tr>
                     <td><label for="paymentmethod">Payment Method: </label></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="paymentmethod"></td>
                 </tr>
                 <tr>
                     <td><label for="deposit">Deposit Paid: </label></td>
@@ -46,10 +46,10 @@
                     <td><input type="date" name="rentFinish" id="" class="dateinput"></td>
                 </tr>
             </table>
+            <div class="btn_div">
+                <button>REGISTER</button>
+            </div>
         </form>
-    </div>
-    <div class="btn_div">
-        <button>REGISTER</button>
     </div>
 </body>
 </html>
