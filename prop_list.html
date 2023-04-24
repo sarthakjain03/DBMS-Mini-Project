@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DH Property Listings</title>
+    <title>DH Staff Listings</title>
     <link rel="stylesheet" href="./Style/index.css">
 </head>
+
 <body>
-    <h1>Property Listing</h1>
+    <h1>Property Listings</h1>
     <div class="staffListing">
-        <form action="">
+        <form action="/prop_list" method="post" id="my-form">
             <table class="innertable" style="margin: 0px; border: 2px solid #000;">
                 <tr>
-                    <td><label for="branchnum">Branch Address: </label></td>
-                    <td><input type="text" id="BranchAddress"></td>
-                </tr>
-                <tr>
-                    <td><label for="telenum">Telephone Number(s): </label></td>
-                    <td><input type="number" id="TeleNo"></td>
+                    <td><label for="property_no">Property ID: </label>
+                    <input type="text" name="property_no" ></td>
+                
+                    <td><label for="property_type">Staff Name: </label>
+                    <input type="text" name="property_type" ></td>
+
+                    <td><label for="rooms">Rooms(≥) </label>
+                        <input type="number" name="rooms" id="rooms"></td>
+                        
+
+                    <td><label for="rent">Rent(≤) </label>
+                        <input type="number" name="rent"  id="rent"></td>
+                    <td><label for="managing_staff_no">Managing Staff ID: </label>
+                    <input type="text" name="managing_staff_no" ></td>
+
+                    <td><label for="owner_no">Owner ID: </label>
+                        <input type="text" name="owner_no" ></td>
+
+                        <td><label for="branch_no">Branch ID: </label>
+                            <input type="text" name="branch_no" ></td>
                 </tr>
             </table>
+            <div class="staff-btn">
+                <button type="submit" class="btn" style="border-radius: 4px;" >Filter</button>
+            </div>
         </form>
     </div>
-    <div class="btn">
-        <button onclick="generateTable()">Search</button>
-    </div>
-
-    <div id="table-container" class="propListing-query"></div>
-    <script src="./Javascript/prop_list.js"></script>
+    
+    <div id="table-container" class="staffListing-query"></div>
+    <script src="../app.js"></script>
 </body>
 </html>
+  
+ 
+  

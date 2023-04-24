@@ -12,29 +12,47 @@
 <body>
     <h1>Staff Listings</h1>
     <div class="staffListing">
-        <form action="">
+        <form action="/staff_listing" method="post" id="my-form">
             <table class="innertable" style="margin: 0px; border: 2px solid #000;">
                 <tr>
-                    <td><label for="clientnum">Branch Number: </label></td>
-                    <td><input type="text" id="BranchNumber" ></td>
-                    <!-- this should be autofill -->
-                </tr>
-                <tr>
-                    <td><label for="branchnum">Branch Address: </label></td>
-                    <td><input type="text" id="BranchAddress"></td>
-                </tr>
-                <tr>
-                    <td><label for="telenum">Telephone Number(s): </label></td>
-                    <td><input type="number" id="TeleNo"></td>
+                    <td><label for="staff_no">Staff ID: </label>
+                    <input type="text" name="staff_no" ></td>
+                <!-- </tr>
+                <tr> -->
+                    <td><label for="full_name">Staff Name: </label>
+                    <input type="text" name="full_name" ></td>
+                <!-- </tr>
+                <tr> -->
+                    <td><label for="staffsex">Sex: </label>
+                                <select name="sex">
+                                    <option value="-1">Select</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select></td>
+                    <td><label for="branch_no">Branch Number: </label>
+                    <input type="text" name="branch_no" ></td>
+                <!-- </tr>
+                <tr> -->
+                    <td><label for="work_position">Position: </label>
+                                <select name="work_position">
+                                    <option value="-1">Select</option>
+                                    <option value="employee" >Employee</option>
+                                    <option value="supervisor">Supervisor</option>
+                                    <option value="manager">Manager</option>
+                                </select></td>
+                    
                 </tr>
             </table>
+            <div class="staff-btn">
+                <button type="submit" class="btn" style="border-radius: 4px;" >Filter</button>
+            </div>
         </form>
     </div>
-    <div class="btn">
-        <button onclick="generateTable()">Search</button>
-    </div>
-
+    
     <div id="table-container" class="staffListing-query"></div>
-    <script src="/Javascript/staffListing.js"></script>
+    <script src="../app.js"></script>
 </body>
 </html>
+  
+ 
+  

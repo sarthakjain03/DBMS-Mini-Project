@@ -12,6 +12,7 @@ const data = [
   ];
 
 function generateTable(){
+    e.preventDefault();
     const BranchNumber = document.getElementById("BranchNumber").value;
     const BranchAddress = document.getElementById("BranchAddress").value;
     const TeleNo = document.getElementById("TeleNo").value;
