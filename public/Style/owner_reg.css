@@ -73,16 +73,16 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
-
-.propRes table{
+/* staffListing-Result ejs */
+.staffListing-Result table{
     margin: 0px;
     padding: 0px;
 }
-.propRes table tr{
+.staffListing-Result table tr{
     margin-bottom: 0px;
 }
 
-.propRes table tr td{
+.staffListing-Result table tr td{
     padding: 18px 10px;
     border-right: 1px solid;
     width: 110px;
