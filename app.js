@@ -395,7 +395,8 @@ app.post('/login', (req, res) => {
 
   
   if (!id || !password) {
-    res.status(400).json({ message: 'id and password are required' });
+    const alertMessage = 'ID and Password are required.';
+    res.send(`<script>alert("${alertMessage}"); window.location.href="/login";</script>`);
     return;
   }
 
@@ -411,7 +412,8 @@ app.post('/login', (req, res) => {
     table = 'staff';
     column = 'password';
   } else {
-    res.status(400).json({ message: 'Invalid login type' });
+    const alertMessage = 'Invalid Login Type!';
+    res.send(`<script>alert("${alertMessage}"); window.location.href="/login";</script>`);
     return;
   }
 
@@ -419,13 +421,15 @@ app.post('/login', (req, res) => {
   connection.query(`SELECT * FROM ${table} WHERE id = ?`, [id], (err, results) => {
     if (err) {
       console.log(err);
-      res.status(500).json({ message: 'Server error' });
+      const alertMessage = 'Server Error';
+      res.send(`<script>alert("${alertMessage}"); window.location.href="/login";</script>`);
       return;
     }
 
     
-    if (results.length === 0) {
-      res.status(401).json({ message: 'Incorrect id or password' });
+    else if (results.length === 0) {
+      const alertMessage = 'Incorrect ID or Password.';
+      res.send(`<script>alert("${alertMessage}"); window.location.href="/login";</script>`);
       return;
     }
 
@@ -439,9 +443,10 @@ app.post('/login', (req, res) => {
       }
 
       
-      if (!result) {
-        res.status(401).json({ message: 'Incorrect id or password' });
-        return;
+      else if (!result) {
+        const alertMessage = 'Incorrect ID or Password.';
+      res.send(`<script>alert("${alertMessage}"); window.location.href="/login";</script>`);
+      return;
       }
 
       req.session.userId = user.id;
