@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <form action="/login" method="post">
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+
+      <label for="login-type">Login Type:</label>
+      <select id="login-type" name="loginType">
+        <option value="staff">Staff</option>
+        <option value="client">Client</option>
+        <option value="owner">Owner</option>
+      </select><br>
+
+      <input type="submit" value="Login">
+    </form>
+  </body>
+</html>

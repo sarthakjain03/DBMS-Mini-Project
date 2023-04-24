@@ -18,7 +18,7 @@
                     <td><label for="property_no">Property ID: </label>
                     <input type="text" name="property_no" ></td>
                 
-                    <td><label for="property_type">Staff Name: </label>
+                    <td><label for="property_type">Property Type: </label>
                     <input type="text" name="property_type" ></td>
 
                     <td><label for="rooms">Rooms(≥) </label>
@@ -27,8 +27,12 @@
 
                     <td><label for="rent">Rent(≤) </label>
                         <input type="number" name="rent"  id="rent"></td>
-                    <td><label for="managing_staff_no">Managing Staff ID: </label>
-                    <input type="text" name="managing_staff_no" ></td>
+                        
+                    <td><label for="rent_status">Availiblity</label>
+                        <select name="rent_status">
+                            <option value="N">Available</option>
+                            <option value="Y">Rented</option>
+                        </select></td>
 
                     <td><label for="owner_no">Owner ID: </label>
                         <input type="text" name="owner_no" ></td>
