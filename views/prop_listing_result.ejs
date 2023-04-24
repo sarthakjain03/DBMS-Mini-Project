@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DH Owner Registration</title>
+    <title>DH Property Listing Results</title>
     <link rel="stylesheet" href="./Style/owner_reg.css">
 </head>
 <body>
@@ -37,42 +37,38 @@
                         <label> <strong> Branch Number</strong></label>
                     </td>
                 </tr>
-            </table>
-        </div>
-        <div class="ownerReg" style="margin-top: 0px; ">
-            <table>
                 <% for(var i =0; i<prop_results.length;i++){ %>
-                <tr style="border: 1px solid;">
-                    <td>
-                        <p><%= prop_results[i].property_no %></p>
-                    </td>
-                    <td>
-                        <p><%= prop_results[i].property_type %></p>
-                    </td>
-                    <td>
-                        <p><%= prop_results[i].rooms %></p>
-                    </td>
-                    <td>
-                        <p><%= prop_results[i].rent %></p>
-                    </td>
-                    <td>
-                        <p><%= prop_results[i].property_address %></p>
-                    </td>
-                    <td>
-                        <p><%= prop_results[i].managing_staff_no %></p>
-                    </td>
-                    <td>
-                        <p><%= prop_results[i].owner_no %></p>
-                    </td>
-                    <td>
-                        <p><%= prop_results[i].branch_no %></p>
-                    </td>
-                </tr>
-                <% } %>
+                    <tr style="border: 1px solid;">
+                        <td>
+                            <p><%= prop_results[i].property_no %></p>
+                        </td>
+                        <td>
+                            <p><%= prop_results[i].property_type %></p>
+                        </td>
+                        <td>
+                            <p><%= prop_results[i].rooms %></p>
+                        </td>
+                        <td>
+                            <p><%= prop_results[i].rent %></p>
+                        </td>
+                        <td>
+                            <p><%= prop_results[i].property_address %></p>
+                        </td>
+                        <td>
+                            <p><%= prop_results[i].managing_staff_no %></p>
+                        </td>
+                        <td>
+                            <p><%= prop_results[i].owner_no %></p>
+                        </td>
+                        <td>
+                            <p><%= prop_results[i].branch_no %></p>
+                        </td>
+                    </tr>
+                    <% } %>
             </table>
-        </div>
-        <div class="btn_div">
-            <button onclick="goBack()">Go Back</button>
+            <div class="btn_div">
+                <button onclick="goBack()">Go Back</button>
+            </div>
         </div>
     </div>
 
