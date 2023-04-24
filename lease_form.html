@@ -5,51 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Lease Form</title>
-    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/owner_reg.css">
 </head>
 <body>
-    <h1>Lease Form</h1>
-    <div class="leaseForm">
-        <form action="/lease_form" method="post">
-            <table>
-                <tr>
-                    <td><label for="lnum">Lease Number: </label></td>
-                    <td><input type="text" name="lnum"></td>
-                    <!-- this is autofill  -->
-                </tr>
-                <tr>
-                    <td><label for="cnum">Client Number: </label></td>
-                    <td><input type="text" name="cnum"></td>
-                </tr>
-                <tr>
-                    <td><label for="pnum">Property Number: </label></td>
-                    <td><input type="text" name="pnum"></td>
-                </tr>
-                <tr>
-                    <td><label for="paymentmethod">Payment Method: </label></td>
-                    <td><input type="text" name="paymentmethod"></td>
-                </tr>
-                <tr>
-                    <td><label for="deposit">Deposit Paid: </label></td>
-                    <td><select name="deposit" id="">
-                        <option value="Select">Select</option>
-                        <option value="Y">Yes</option>
-                        <option value="N">No</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td><label for="rentStart">Rent Start: </label></td>
-                    <td><input type="date" name="rentStart" id="" class="dateinput"></td>
-                </tr>
-                <tr>
-                    <td><label for="rentFinish">Rent Finish: </label></td>
-                    <td><input type="date" name="rentFinish" id="" class="dateinput"></td>
-                </tr>
-            </table>
-            <div class="btn_div">
-                <button>REGISTER</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="ownerReg">
+            <h1>Lease Form</h1>
+            <form action="/lease_form" method="post">
+                <table>
+                    <tr>
+                        <td><label for="lnum">Lease Number: </label></td>
+                        <td><input type="text" name="lnum"></td>
+                        <!-- this is autofill  -->
+                    </tr>
+                    <tr>
+                        <td><label for="cnum">Client Number: </label></td>
+                        <td><input type="text" name="cnum"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pnum">Property Number: </label></td>
+                        <td><input type="text" name="pnum"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="paymentmethod">Payment Method: </label></td>
+                        <td><input type="text" name="paymentmethod"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="deposit">Deposit Paid: </label></td>
+                        <td><select name="deposit" id="">
+                            <option value="Select">Select</option>
+                            <option value="Y">Yes</option>
+                            <option value="N">No</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rentStart">Rent Start: </label></td>
+                        <td><input style="width: 166px; padding: 1px 0;" type="date" name="rentStart" id="" class="dateinput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rentFinish">Rent Finish: </label></td>
+                        <td><input style="width: 166px; padding: 1px 0;" type="date" name="rentFinish" id="" class="dateinput"></td>
+                    </tr>
+                </table>
+                <div class="btn_div">
+                    <button>REGISTER</button>
+                </div>
+            </form>
+        </div>
+        <div class="image-container4">
+            
+        </div>
     </div>
 </body>
 </html>

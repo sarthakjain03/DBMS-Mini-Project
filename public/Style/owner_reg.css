@@ -36,6 +36,14 @@ body {
     background-position: left;
 }
 
+.image-container4 {
+    flex: 1;
+    height: 100%;
+    background-image: url('image4.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
 .ownerReg {
     height: 92%;
     width: 45%;

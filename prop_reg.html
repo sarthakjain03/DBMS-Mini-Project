@@ -5,61 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Property Registration</title>
-    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/owner_reg.css">
 </head>
 <body>
-    <h1>Property Registration</h1>
-    <div class="propReg">
-        <form action="/prop_reg" method="post">
-            <table>
-                <tr>
-                    <td>
-                        <table class="innertable">
-                            <tr>
-                                <td><label for="pnum">Property Number: </label></td>
-                                <td><input type="text" name="propnum"></td>
-                                <!-- this should be autofill -->
-                            </tr>
-                            <tr>
-                                <td><label for="ptype">Type: </label></td>
-                                <td><input type="text" name="type"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="rooms">Rooms: </label></td>
-                                <td><input type="text" name="room"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="rent">Rent: </label></td>
-                                <td><input type="number" name="rent" id=""></td>
-                            </tr>
-                            <tr>
-                                <td><label for="p_add">Address: </label></td>
-                                <td><input type="text" name="address"></td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td>
-                        <table class="innertable">
-                            <tr>
-                                <td><label for="mstaff">Managing Staff: </label></td>
-                                <td><input type="text" name="managestaff"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="ownerNum">Owner Number: </label></td>
-                                <td><input type="text" name="ownernum"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="branchnum">Branch Number: </label></td>
-                                <td><input type="text" name="branchnum"></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-            <div class="btn_div">
-                <button>REGISTER</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="ownerReg">
+            <h1>Property Registration</h1>
+            <form action="/prop_reg" method="post">
+                <table>
+                    <tr>
+                        <td><label for="pnum">Property Number: </label></td>
+                        <td><input type="text" name="propnum"></td>
+                        <!-- this should be autofill -->
+                    </tr>
+                    <tr>
+                        <td><label for="ptype">Type: </label></td>
+                        <td><input type="text" name="type"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rooms">Rooms: </label></td>
+                        <td><input type="text" name="room"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rent">Rent: </label></td>
+                        <td><input type="number" name="rent" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="p_add">Address: </label></td>
+                        <td><input type="text" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mstaff">Managing Staff: </label></td>
+                        <td><input type="text" name="managestaff"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ownerNum">Owner Number: </label></td>
+                        <td><input type="text" name="ownernum"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="branchnum">Branch Number: </label></td>
+                        <td><input type="text" name="branchnum"></td>
+                    </tr>
+                </table>
+                <div class="btn_div">
+                    <button>REGISTER</button>
+                </div>
+            </form>
+        </div>
+        <div class="image-container2">
+
+        </div>
     </div>
 </body>
 </html>
