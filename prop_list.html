@@ -16,30 +16,35 @@
             <form action="/prop_list" method="post" id="my-form">
                 <table>
                     <tr>
-                        <td><label for="property_no">Property ID: </label>
-                        <input type="text" name="property_no" ></td>
-                    
-                        <td><label for="property_type">Property Type: </label>
-                        <input type="text" name="property_type" ></td>
-    
-                        <td><label for="rooms">Rooms(≥) </label>
-                            <input type="number" name="rooms" id="rooms"></td>
-                            
-    
-                        <td><label for="rent">Rent(≤) </label>
-                            <input type="number" name="rent"  id="rent"></td>
-                            
-                        <td><label for="rent_status">Availiblity</label>
-                            <select name="rent_status">
+                        <td><label for="property_no">Property ID: </label></td>
+                        <td><input type="text" name="property_no" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="property_type">Property Type: </label></td>
+                        <td><input type="text" name="property_type" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rooms">Rooms(≥) </label></td>
+                        <td><input type="number" name="rooms" id="rooms"></td>
+                    </tr>    
+                    <tr>
+                        <td><label for="rent">Rent(≤) </label></td>
+                        <td><input type="number" name="rent"  id="rent"></td>
+                    </tr>
+                    <tr>  
+                        <td><label for="rent_status">Availiblity</label></td>
+                        <td><select name="rent_status">
                                 <option value="N">Available</option>
                                 <option value="Y">Rented</option>
-                            </select></td>
-    
-                        <td><label for="owner_no">Owner ID: </label>
-                            <input type="text" name="owner_no" ></td>
-    
-                            <td><label for="branch_no">Branch ID: </label>
-                                <input type="text" name="branch_no" ></td>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="owner_no">Owner ID: </label></td>
+                        <td><input type="text" name="owner_no" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="branch_no">Branch ID: </label></td>
+                        <td><input type="text" name="branch_no" ></td>
                     </tr>
                 </table>
                 <div class="btn_div">

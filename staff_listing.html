@@ -6,47 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Staff Listings</title>
-    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/owner_reg.css">
 </head>
 
 <body>
-    <h1>Staff Listings</h1>
-    <div class="staffListing">
-        <form action="/staff_listing" method="post" id="my-form">
-            <table class="innertable" style="margin: 0px; border: 2px solid #000;">
-                <tr>
-                    <td><label for="staff_no">Staff ID: </label>
-                    <input type="text" name="staff_no" ></td>
-                <!-- </tr>
-                <tr> -->
-                    <td><label for="full_name">Staff Name: </label>
-                    <input type="text" name="full_name" ></td>
-                <!-- </tr>
-                <tr> -->
-                    <td><label for="staffsex">Sex: </label>
-                                <select name="sex">
-                                    <option value="-1">Select</option>
-                                    <option value="M">Male</option>
-                                    <option value="F">Female</option>
-                                </select></td>
-                    <td><label for="branch_no">Branch Number: </label>
-                    <input type="text" name="branch_no" ></td>
-                <!-- </tr>
-                <tr> -->
-                    <td><label for="work_position">Position: </label>
-                                <select name="work_position">
-                                    <option value="-1">Select</option>
-                                    <option value="employee" >Employee</option>
-                                    <option value="supervisor">Supervisor</option>
-                                    <option value="manager">Manager</option>
-                                </select></td>
-                    
-                </tr>
-            </table>
-            <div class="staff-btn">
-                <button type="submit" class="btn" style="border-radius: 4px;" >Filter</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="ownerReg">
+            <h1>Staff Listings</h1>
+            <form action="/staff_listing" method="post" id="my-form">
+                <table>
+                    <tr>
+                        <td><label for="staff_no">Staff ID: </label></td>
+                        <td><input type="text" name="staff_no" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="full_name">Staff Name: </label></td>
+                        <td><input type="text" name="full_name" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="staffsex">Sex: </label></td>
+                        <td><select name="sex">
+                            <option value="-1">Select</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select></td>
+                        <td><label for="branch_no">Branch Number: </label></td>
+                        <td><input type="text" name="branch_no" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="work_position">Position: </label></td>
+                        <td><select name="work_position">
+                            <option value="-1">Select</option>
+                            <option value="employee" >Employee</option>
+                            <option value="supervisor">Supervisor</option>
+                            <option value="manager">Manager</option>
+                        </select></td>
+                    </tr>
+                </table>
+                <div class="btn_div">
+                    <button type="submit">Filter</button>
+                </div>
+            </form>
+        </div>
     </div>
     
     <div id="table-container" class="staffListing-query"></div>
