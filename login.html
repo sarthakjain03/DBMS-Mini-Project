@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Login Page</title>
-  </head>
-  <body>
-    <h1>Login Page</h1>
+
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./Style/login.css">
+</head>
+
+<body>
+  <div>
+    <h1>LOGIN</h1>
     <form action="/login" method="post">
-      <label for="id">ID:</label>
-      <input type="text" id="id" name="id"><br>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password"><br>
-
-      <label for="login-type">Login Type:</label>
-      <select id="login-type" name="loginType">
-        <option value="staff">Staff</option>
-        <option value="client">Client</option>
-        <option value="owner">Owner</option>
-      </select><br>
-
-      <input type="submit" value="Login">
+      <table>
+        <tr>
+          <td><label for="id">ID:</label></td>
+          <td><input type="text" id="id" name="id"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td class="selectLabel"><label for="login-type">Login Type:</label></td>
+          <td class="typeSel">
+            <select id="login-type" name="loginType">
+              <option value="staff">Staff</option>
+              <option value="client">Client</option>
+              <option value="owner">Owner</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <div class="loginBtn">
+        <input type="submit" value="Login">
+      </div>
     </form>
-  </body>
+  </div>
+</body>
 </html>

@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #FFDEE9, #B5FFFC);
+}
+
+div {
+    margin: 0;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: max-content;
+    border-radius: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+td {
+    margin: 0 20px 5px;
+}
+
+.selectLabel {
+    display: flex;
+    align-items: center;
+}
+
+.typeSel {
+    margin-left: 0;
+    width: 53%;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+.loginBtn {
+    width: 100%;
+    padding: 0 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginBtn input {
+    width: 80%;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 15px;
+    background-color: darkblue;
+    color: white;
+}

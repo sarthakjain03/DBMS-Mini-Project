@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Owner Registration</title>
-    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/owner_reg.css">
 </head>
+
 <body>
-    <h1>Owner Registration</h1>
-    <div class="ownerReg">
-        <form action="/owner_reg" method="post">
-            <table>
-                <tr>
-                    <td><label for="ownerNum">Owner Number: </label></td>
-                    <td><input type="text" name="ownerNum"></td>
-                    <!-- this is autofill -->
-                </tr>
-                <tr>
-                    <td><label for="ownerName">Full Name: </label></td>
-                    <td><input type="text" name="ownerName"></td>
-                </tr>
-                <tr>
-                    <td><label for="password">Password: </label></td>
-                    <td><input type="password" name="password"></td>
-                </tr>
-                <tr>
-                    <td><label for="otype">Type: </label></td>
-                    <td><select name="otype" id="">
-                        <option value="Select">Select</option>
-                        <option value="P">Personal</option>
-                        <option value="B">Business</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td><label for="oadd">Address: </label></td>
-                    <td><input type="text" name="oadd"></td>
-                </tr>
-                <tr>
-                    <td><label for="otele">Telephone: </label></td>
-                    <td><input type="number" name="otele" id=""></td>
-                </tr>
-            </table>
-            <div class="btn_div">
-                <button>REGISTER</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="ownerReg">
+            <h1>Owner Registration</h1>
+            <form action="/owner_reg" method="post">
+                <table>
+                    <tr>
+                        <td><label for="ownerNum">Owner Number: </label></td>
+                        <td><input type="text" name="ownerNum"></td>
+                        <!-- this is autofill -->
+                    </tr>
+                    <tr>
+                        <td><label for="ownerName">Full Name: </label></td>
+                        <td><input type="text" name="ownerName"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password: </label></td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="otype">Type: </label></td>
+                        <td><select name="otype" id="">
+                                <option value="Select">Select</option>
+                                <option value="P">Personal</option>
+                                <option value="B">Business</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="oadd">Address: </label></td>
+                        <td><input type="text" name="oadd"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="otele">Telephone: </label></td>
+                        <td><input type="number" name="otele" id=""></td>
+                    </tr>
+                </table>
+                <div class="btn_div">
+                    <button>REGISTER</button>
+                </div>
+            </form>
+        </div>
+        <div class="image-container">
+
+        </div>
     </div>
 </body>
+
 </html>
