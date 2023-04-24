@@ -5,75 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Client Registration</title>
-    <link rel="stylesheet" href="/Style/index.css">
+    <link rel="stylesheet" href="./Style/owner_reg.css">
 </head>
 <body>
-    <h1>Client Registration Form</h1>
-    <div class="clientReg">
-        <form action="/client_reg" method="post">
-            <table
-                <tr>
-                    <td>
-                        <table style="margin: 0px; border: 0;">
-                            <tr>
-                                <td>
-                                    <table class="innertable">
-                                        <tr>
-                                            <td><label for="clientnum">Client Number: </label></td>
-                                            <td><input type="text" name="clientnum"></td>
-                                            <!-- this should be autofill -->
-                                        </tr>
-                                        <tr>
-                                            <td><label for="clientname">Full Name: </label></td>
-                                            <td><input type="text" name="clientname"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="password">Password:</label></td>
-                                            <td><input type="password" id="password" name="password"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="telenum">Telephone: </label></td>
-                                            <td><input type="number" name="telenum" id=""></td>
-                                        </tr>
-                                    </table>
-                                    <table class="innertable">
-                                        <tr><td><strong>Enter property requirements</strong></td></tr>
-                                        <tr>
-                                            <td><label for="type">Type: </label></td>
-                                            <td><input type="text" name="type"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="maxrent">Max Rent: </label></td>
-                                            <td><input type="number" name="maxrent" id=""></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td>
-                        <table class="branchtable" style="border: 0;">
-                            <tr><td><strong>Branch Details</strong></td></tr>
-                            <tr>
-                                <td><label for="branchnum">Branch Number: </label></td>
-                                <td><input type="text" name="branchnum"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="registrar">Registered By (Staff ID): </label></td>
-                                <td><input type="text" name="registrar"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="regdate">Date Registered: </label></td>
-                                <td><input type="date" name="regdate" id=""></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-            <div class="btn_div">
-                <button type="submit">REGISTER</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="ownerReg">
+            <h1>Client Registration</h1>
+            <form action="/client_reg" method="post">
+                <table>
+                    <tr>
+                        <td><label for="clientnum">Client Number: </label></td>
+                        <td><input type="text" name="clientnum"></td>
+                        <!-- this should be autofill -->
+                    </tr>
+                    <tr>
+                        <td><label for="clientname">Full Name: </label></td>
+                        <td><input type="text" name="clientname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telenum">Telephone: </label></td>
+                        <td><input type="number" name="telenum" id=""></td>
+                    </tr>
+                    <!-- <tr style="margin: 10px 0;"><td><strong>Enter property requirements</strong></td></tr> -->
+                    <tr>
+                        <td><label for="type">Type: </label></td>
+                        <td><input type="text" name="type"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="maxrent">Max Rent: </label></td>
+                        <td><input type="number" name="maxrent" id=""></td>
+                    </tr>
+                    <!-- <tr><td><strong>Branch Details</strong></td></tr> -->
+                    <tr>
+                        <td><label for="branchnum">Branch Number: </label></td>
+                        <td><input type="text" name="branchnum"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="registrar">Registered By (Staff ID): </label></td>
+                        <td><input type="text" name="registrar"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="regdate">Date Registered: </label></td>
+                        <td><input style="width: 166px; padding: 1px 0;" type="date" name="regdate" id=""></td>
+                    </tr>
+                </table>
+                <div class="btn_div">
+                    <button type="submit">REGISTER</button>
+                </div>
+            </form>
+        </div>
+        <div class="image-container2">
+
+        </div>
     </div>
 </body>
 </html>

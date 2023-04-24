@@ -5,93 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Staff Registration</title>
-    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/owner_reg.css">
 </head>
 <body>
-    <h1>Staff Registration Form</h1>
-    <div class="staffReg">
-        <form action="/staff_reg" method="post">
-            <table>
-                <tr>
-                    <td>
-                        <table class="innertable">
-                            <tr>
-                                <td><label for="staffnum">Staff Number: </label></td>
-                                <td><input type="text"  name="staffnum"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="staffname">Full Name: </label></td>
-                                <td><input type="text" name="staffname"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="password">Password: </label></td>
-                                <td><input type="password" name="password"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="staffsex">Sex: </label></td>
-                                <td><select name="staffsex" id="staffsex">
-                                    <option value="select">Select</option>
-                                    <option value="M">Male</option>
-                                    <option value="F">Female</option>
-                                </select></td>
-                            </tr>
-                            <tr>
-                                <td><label for="dob">Date of Birth: </label></td>
-                                <td><input type="date" name="dob" class="dateinput"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="position">Position: </label></td>
-                                <td><select name="position" id="position">
-                                    <option value="select">Select</option>
-                                    <option value="employee">Employee</option>
-                                    <option value="supervisor">Supervisor</option>
-                                    <option value="manager">Manager</option>
-                                </select></td>
-                            </tr>
-                            <!-- <tr>
-                                <td><label for="salary">Salary: </label></td>
-                                
-                                <td><input type="number" name="salary"></td>
-                            </tr> -->
-                            <tr>
-                                <td><label for="branchnum">Branch Number: </label></td>
-                                <td><input type="text" name="branchnum"></td>
-                            </tr>
-                            <!-- below 2 input fields should be auto filled based on branch number -->
-                            <!-- <tr>
-                                <td><label for="branchadd">Branch Address: </label></td>
-                                <td><input type="text" name="branchadd"></td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td><label for="branchtele">Telephone Number: </label></td>
-                                <td><input type="number" name="tele"></td>
-                            </tr> -->
-                        </table>
-                    </td>
-                    <td>
-                        <table class="innertable">
-                            <tr><td><strong>Enter details where applicable</strong></td></tr>
-                            <tr>
-                                <td><label for="startdate">Start Date: </label></td>
-                                <td><input type="date" name="startdate" id="startdate" name="startdate" class="dateinput"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="bonus">Bonus: </label></td>
-                                <td><input type="number" name="bonus" id="bonus"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="supername">Supervisor ID: </label></td>
-                                <td><input type="text" name="supernum"></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-            <div class="btn_div">
-                <!-- on clicking register, data should be added to database -->
-                <button>REGISTER</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="ownerReg">
+            <h1>Staff Registration</h1>
+            <form action="/staff_reg" method="post">
+                <table>
+                    <tr>
+                        <td><label for="staffnum">Staff Number: </label></td>
+                        <td><input type="text"  name="staffnum"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="staffname">Full Name: </label></td>
+                        <td><input type="text" name="staffname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password: </label></td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="staffsex">Sex: </label></td>
+                        <td><select name="staffsex" id="staffsex">
+                            <option value="select">Select</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth: </label></td>
+                        <td><input type="date" name="dob" class="dateinput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="position">Position: </label></td>
+                        <td><select name="position" id="position">
+                            <option value="select">Select</option>
+                            <option value="employee">Employee</option>
+                            <option value="supervisor">Supervisor</option>
+                            <option value="manager">Manager</option>
+                        </select></td>
+                    </tr>
+                    <!-- <tr>
+                        <td><label for="salary">Salary: </label></td>
+                        
+                        <td><input type="number" name="salary"></td>
+                    </tr> -->
+                    <tr>
+                        <td><label for="branchnum">Branch Number: </label></td>
+                        <td><input type="text" name="branchnum"></td>
+                    </tr>
+                    <!-- below 2 input fields should be auto filled based on branch number -->
+                    <!-- <tr>
+                        <td><label for="branchadd">Branch Address: </label></td>
+                        <td><input type="text" name="branchadd"></td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td><label for="branchtele">Telephone Number: </label></td>
+                        <td><input type="number" name="tele"></td>
+                    </tr> -->
+                    <!-- <tr><td><strong>Enter details where applicable</strong></td></tr> -->
+                    <tr>
+                        <td><label for="startdate">Start Date: </label></td>
+                        <td><input type="date" name="startdate" id="startdate" name="startdate" class="dateinput"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="bonus">Bonus: </label></td>
+                        <td><input type="number" name="bonus" id="bonus"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="supername">Supervisor ID: </label></td>
+                        <td><input type="text" name="supernum"></td>
+                    </tr>
+                </table>
+                <div class="btn_div">
+                    <!-- on clicking register, data should be added to database -->
+                    <button>REGISTER</button>
+                </div>
+                <div class="image-container3">
+    
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
