@@ -6,45 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Staff Listings</title>
-    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/owner_reg.css">
 </head>
 
 <body>
-    <h1>Property Listings</h1>
-    <div class="staffListing">
-        <form action="/prop_list" method="post" id="my-form">
-            <table class="innertable" style="margin: 0px; border: 2px solid #000;">
-                <tr>
-                    <td><label for="property_no">Property ID: </label>
-                    <input type="text" name="property_no" ></td>
-                
-                    <td><label for="property_type">Property Type: </label>
-                    <input type="text" name="property_type" ></td>
-
-                    <td><label for="rooms">Rooms(≥) </label>
-                        <input type="number" name="rooms" id="rooms"></td>
-                        
-
-                    <td><label for="rent">Rent(≤) </label>
-                        <input type="number" name="rent"  id="rent"></td>
-                        
-                    <td><label for="rent_status">Availiblity</label>
-                        <select name="rent_status">
-                            <option value="N">Available</option>
-                            <option value="Y">Rented</option>
-                        </select></td>
-
-                    <td><label for="owner_no">Owner ID: </label>
-                        <input type="text" name="owner_no" ></td>
-
-                        <td><label for="branch_no">Branch ID: </label>
-                            <input type="text" name="branch_no" ></td>
-                </tr>
-            </table>
-            <div class="staff-btn">
-                <button type="submit" class="btn" style="border-radius: 4px;" >Filter</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="ownerReg">
+            <h1>Property Listings</h1>
+            <form action="/prop_list" method="post" id="my-form">
+                <table>
+                    <tr>
+                        <td><label for="property_no">Property ID: </label>
+                        <input type="text" name="property_no" ></td>
+                    
+                        <td><label for="property_type">Property Type: </label>
+                        <input type="text" name="property_type" ></td>
+    
+                        <td><label for="rooms">Rooms(≥) </label>
+                            <input type="number" name="rooms" id="rooms"></td>
+                            
+    
+                        <td><label for="rent">Rent(≤) </label>
+                            <input type="number" name="rent"  id="rent"></td>
+                            
+                        <td><label for="rent_status">Availiblity</label>
+                            <select name="rent_status">
+                                <option value="N">Available</option>
+                                <option value="Y">Rented</option>
+                            </select></td>
+    
+                        <td><label for="owner_no">Owner ID: </label>
+                            <input type="text" name="owner_no" ></td>
+    
+                            <td><label for="branch_no">Branch ID: </label>
+                                <input type="text" name="branch_no" ></td>
+                    </tr>
+                </table>
+                <div class="btn_div">
+                    <button type="submit">Filter</button>
+                </div>
+            </form>
+        </div>    
     </div>
     
     <div id="table-container" class="staffListing-query"></div>
