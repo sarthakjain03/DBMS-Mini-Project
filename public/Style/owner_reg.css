@@ -59,6 +59,38 @@ body {
     margin-bottom: 20px;
 }
 
+.propRes {
+    height: 92%;
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.propRes h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.propRes table{
+    margin: 0px;
+    padding: 0px;
+}
+.propRes table tr{
+    margin-bottom: 0px;
+}
+
+.propRes table tr td{
+    padding: 18px 10px;
+    border-right: 1px solid;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     width: 100%;
     display: flex;
