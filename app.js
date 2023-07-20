@@ -119,7 +119,7 @@ app.get("/", function(req,res)
     console.log(req.session,"   ",req.session.loginType);
     res.redirect("/auth");
   }
-  res.sendFile(__dirname+"/homepage.html");   
+  res.sendFile(__dirname+"/index.html");   
 });
 
 app.get("/login", function(req,res)
