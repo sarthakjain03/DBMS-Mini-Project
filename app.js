@@ -12,10 +12,10 @@ app.use(bodyParser.json());
 app.set("view engine","ejs");
 const sessionStore = new MySQLStore({
   host: process.env.DB_HOST,
-  port: process.env.PORT,
+  port: 3306,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
-  database: process.env.DB_NAME
+  database: process.env.DB_DBNAME
 });
 app.use(session({
   secret: 'mysecret',
@@ -28,7 +28,7 @@ const connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
-    database: process.env.DB_NAME
+    database: process.env.DB_DBNAME
   });
 connection.connect((err) => {
   if (err) throw err;
