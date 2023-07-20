@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.set("view engine","ejs");
 const sessionStore = new MySQLStore({
   host: 'localhost',
-  port: 3306,
+  port: process.env.PORT || 3306,
   user: 'root',
   password: process.env.DB_PASS,
   database: 'dreamhome'
