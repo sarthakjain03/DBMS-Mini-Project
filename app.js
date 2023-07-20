@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
 const bcrypt = require('bcrypt');
-const mysql = require('mysql');
+const mysql = require('mysql2/promise');
 require("dotenv").config();
 const app = express();
 app.use(express.static(__dirname+"/public"));
@@ -18,7 +18,7 @@ const sessionStore = new MySQLStore({
   database: process.env.DB_NAME
 });
 app.use(session({
-  secret: 'mysecret',
+  secret: 'session_cookie_secret',
   resave: false,
   saveUninitialized: false,
   store: sessionStore
