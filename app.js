@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
 const bcrypt = require('bcrypt');
-const mysql = require('mysql2/promise');
+const mysql = require('mysql');
 require("dotenv").config();
 const app = express();
 app.use(express.static(__dirname+"/public"));
