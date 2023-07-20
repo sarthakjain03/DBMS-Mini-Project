@@ -11,11 +11,11 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.set("view engine","ejs");
 const sessionStore = new MySQLStore({
-  host: 'localhost',
-  port: process.env.PORT || 3306,
-  user: 'root',
+  host: process.env.DB_HOST,
+  port: process.env.PORT,
+  user: process.env.DB_USER,
   password: process.env.DB_PASS,
-  database: 'dreamhome'
+  database: process.env.DB_NAME
 });
 app.use(session({
   secret: 'mysecret',
@@ -25,10 +25,10 @@ app.use(session({
 }));
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
     password: process.env.DB_PASS,
-    database: 'dreamhome'
+    database: process.env.DB_NAME
   });
 connection.connect((err) => {
   if (err) throw err;
